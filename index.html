@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scorpion Tech</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+body {
+    background: url("background.jpg") center center / cover no-repeat;
+}
+
+/* تشغيل Host 13.52 داخل نفس الصفحة */
+#host1352 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* واجهة Scorpion Tech تبقى ظاهرة */
+#scorpion {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    pointer-events: none;
+}
+
+#status {
+    margin-bottom: 60px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 8px black;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Host 13.52 يعمل داخل نفس الصفحة -->
+<iframe
+    id="host1352"
+    src="1352/index.html"
+    allow="autoplay">
+</iframe>
+
+<!-- واجهة Scorpion Tech -->
+<div id="scorpion">
+    <div id="status">
+        Scorpion Tech<br>
+        PS4 13.52
+    </div>
+</div>
+
+</body>
+</html>
